@@ -1,6 +1,13 @@
 function ucFirst(str) {
-  let strSplit = str.split("");
-  let l = strSplit.length;
-  let result = strSplit[0].toUpperCase() + strSplit.slice(1, l).join('');
-  console.log (result)
+  if (str.length === 0){
+    return str;
+  }
+  else {
+    if (str.length === 1) {
+      return str.toUpperCase();
+    }
+    else {
+      return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+  }
 }
