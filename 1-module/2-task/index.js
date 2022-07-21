@@ -6,6 +6,7 @@ function isValid(name) {
   return !!name && !name.includes(' ') && name.length >= 4;
 }
 
+
 function sayHello() {
   let userName = prompt('Введите ваше имя');
 
